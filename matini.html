@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💖 Шақырту</title>
+  <link rel="stylesheet" href="canvas.css">
+</head>
+
+<body>
+  <canvas id="heart"></canvas>
+
+  <div class="invite-text">
+    <h2>Құрметті Асел ханым,</h2>
+    <p>
+      31 қазан күні <br>
+      <strong>Almaty Museum of Arts</strong> мекенжайында шақырамын<br>
+      <a href="https://go.2gis.com/0Rok2" target="_blank">https://go.2gis.com/0Rok2</a><br><br>
+      Бірге Cеруендеп — <em>Музей көрінісін тамашалайық. 💐</em>
+    </p>
+  </div>
+
+  <audio id="backgroundMusic" loop>
+    <source src="muz.m4a" type="audio/mp4">
+  </audio>
+
+  <script src="script/.js"></script>
+
+  <script>
+    const music = document.getElementById("backgroundMusic");
+    document.body.addEventListener("click", () => {
+      music.play().catch(err => console.log("Музыка ойнамады:", err));
+    });
+  </script>
+</body>
+</html>

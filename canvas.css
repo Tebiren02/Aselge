@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Georgia', serif;
+  color: #fff;
+  text-align: center;
+  background-image: url("Asel.jpg"); /* мұнда фон фото */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(3px);
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.invite-text {
+  position: relative;
+  z-index: 2;
+  top: 35%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  display: inline-block;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+}
+
+.invite-text h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffe6f2;
+  margin-bottom: 10px;
+}
+
+.invite-text p {
+  font-size: 1.2rem;
+  color: #fff0f5;
+  line-height: 1.6;
+}
+
+a {
+  color: #c1629c;
+  text-decoration: none;
+  font-weight: bold;
+}
